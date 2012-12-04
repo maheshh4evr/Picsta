@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Picsta</title>
+<link rel="stylesheet" type="text/css" href="css/style.css"></link>
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"></link>
+</head>
+<body>
+	<div id="imgModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">		
+		<div class="modal-body">			
+			<img id="leftarrow" class="arrow" src="img/left_arrow.png"></img>
+			<img id="rightarrow" class="arrow" src="img/right_arrow.png"></img>	    	
+		</div>
+		<div class="modal-footer">	    	    	   
+		    <div class="pull-left">
+		    	<i class="icon-heart"></i><p id="likes">-</p>
+		    	<i class="icon-comment"></i><p id="comments">-</p>
+		    </div>
+		    <div class="pull-right">
+		    	<i class="icon-user"></i>
+		    	<p style="display: inline; padding: 0px 5px;" id="uploader"></p>
+		    </div>
+	  </div>
+	</div>
+	<div class="wrap">
+		<div id="progresscontainer">
+			<div id="loadingcircle">
+				<p id="loadedpercent">0%</p>
+			</div>
+		</div>
+		<div class="container wrapper">
+			<div id="retrybox">
+				<div class="alert alert-block alert-error fade in" style="display: none;">					
+					<h4 class="alert-heading">Oh snap! There was an error!</h4>
+					<p>Please check your internet connection and try again.</p>
+					<p>
+						<a id="btn-alert-refresh" class="btn btn-primary" href="#">Try again</a>
+					</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="span2">				
+					<!-- <span class="logo">PhotoPop</span> -->
+					<img class="headerlogo" src="img/header_logo.png" alt="Header Logo"></img>
+				</div>
+				<div class="span7">
+					<!-- <span class="headercaption">Popular Instagram photos</span> -->
+				</div>
+				<div class="span3">
+					<p class="header-reload-container">
+						<a id="btn-refresh" class="btn" href="#"><i class="icon-refresh" style="padding-right:8px"></i>Reload Images</a>
+					</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="span12" id="imgspan">					
+				</div>
+			</div>					
+		</div>
+		<div class="footer">
+			<div class="container">
+				<p class="muted pull-left disclaimer">All photos are properties of their respective owners. This product uses the Instagram API but is not endorsed or certified by Instagram.</p>
+				<p class="pull-right">
+					<a href="mailto:picstaforchrome@gmail.com" rel="tooltip" data-placement="top" data-original-title="Email feedback and issues">Support</a>					
+				</p>
+				<p class="pull-right">					
+					<a href="https://en.gravatar.com/maheshsenniappan" target="_blank" rel="tooltip" data-placement="top" data-original-title="Developer profile">Developer</a>
+				</p>
+			</div>						
+		</div>			
+	</div>	
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/jquery.jsonp.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+	<script type="text/javascript" src="js/analytics.js"></script>
+</body>
+</html>

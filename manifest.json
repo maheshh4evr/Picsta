@@ -1,0 +1,16 @@
+{
+"name":"Picsta",
+"version":"0.0.4",
+"manifest_version":2,
+"description":"Popular Instagram photos",
+"app":{
+    "launch":{
+    	"local_path" : "Picsta.html"
+    }
+  },
+"icons":{
+    "16":"img/picsta-16.png",
+    "128":"img/picsta-128.png"
+  },
+"content_security_policy": "script-src 'self' https://ssl.google-analytics.com https://api.instagram.com; object-src 'self'"
+}
